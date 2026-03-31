@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura condicionais e repetições</title>
+</head>
+<body>
+    <h1>Atividade 3</h1>
+    <script>
+        var hora = 8
+        var minutos = 20
+        var total_entrevistas = 0
+        const saida = 11
+
+        var entrevitados = [
+            "Evelin",
+            "Nemuel",
+            "Junior",
+            "Xavier",
+            "Matheus"
+        ]
+
+        entrevitados.sort();
+
+        for (i = hora; i <=saida; i = i+1){
+            if((i == 12)|| (i == 13)){
+                continue
+            }
+            for (j = 0; j < 60; j = j + minutos){
+                total_entrevistas++;
+                if(j == 0){
+                    console.log(i + ":" + j + "0",":", entrevitados[total_entrevistas - 1])
+                }
+                else{
+                    console.log(i + ":" + j, ":", entrevitados[total_entrevistas - 1])
+                }
+            }
+        }
+    </script>
+</body>
+</html>

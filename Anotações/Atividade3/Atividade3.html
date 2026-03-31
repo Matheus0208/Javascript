@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura condicionais e repetições</title>
+</head>
+<body>
+    <h1>Atividade 3</h1>
+    <script>
+        let nota, conceito;
+        let count = 1;
+
+        while (count <= 10){
+            nota = parseFloat(prompt("Informe a nota do estudande: "));
+            if(nota){
+                if((nota <= 10) && (nota >=8)){
+                    console.log('Conceito A');
+                }
+                if((nota < 8) && (nota >= 5)){
+                    console.log('Conceito B');
+                }
+            }else{
+                    console.log('Você precisa se dedicar um pouco mais');
+                }
+            count++;
+        }
+    </script>
+</body>
+</html>
